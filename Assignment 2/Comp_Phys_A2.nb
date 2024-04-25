@@ -1,0 +1,151 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+TextData[{"Problem"," ","3"}],"Section",ExpressionUUID -> "04525a12-ec28-43ba-afd7-6c0ba3513a88"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"DSolve","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{RowBox[{RowBox[
+{"y","''"}],"[","x","]"}],"==",RowBox[{RowBox[{"2",RowBox[{RowBox[{"y","'"}],"[","x","]"}]}],"-",RowBox[
+{"y","[","x","]"}],"+",RowBox[{"x"," ",RowBox[{"Exp","[","x","]"}]}],"-","x"}]}],",",RowBox[
+{RowBox[{"y","[","0","]"}],"==","0"}],",",RowBox[{RowBox[{RowBox[{"y","'"}],"[","0","]"}],"==","0"}]}],"}"}],",",RowBox[
+{"{",RowBox[{"y","[","x","]"}],"}"}],",","x"}],"]"}]],"Input",ExpressionUUID -> "9ade7f4b-4219-4e1e-9012-b2ac74a5e1af"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"{",RowBox[{RowBox[{"y","[","x","]"}],"\[Rule]",RowBox[{FractionBox[
+"1","6"]," ",RowBox[{"(",RowBox[{RowBox[{"-","12"}],"+",RowBox[{"12"," ",SuperscriptBox[
+"\[ExponentialE]","x"]}],"-",RowBox[{"6"," ","x"}],"-",RowBox[{"6"," ",SuperscriptBox[
+"\[ExponentialE]","x"]," ","x"}],"+",RowBox[{SuperscriptBox["\[ExponentialE]","x"]," ",SuperscriptBox[
+"x","3"]}]}],")"}]}]}],"}"}],"}"}],StandardForm],"Output",CellLabel -> "Out[10]= ",
+ExpressionUUID -> "603daade-1b78-4747-9388-68ec60945208"]},Open],ExpressionUUID -> "be442fe3-3945-4106-a1cc-b38386fa7620"]},
+Open],ExpressionUUID -> "85d6e97d-cc2c-4609-b406-a720c66bf5e6"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Problem"," ","6"}],"Section",ExpressionUUID -> "08832ad1-2e71-49fa-a15f-f0db73690f8e"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"DSolve","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{RowBox[{RowBox[
+{"x","''"}],"[","t","]"}],"==",RowBox[{"-","10"}]}],",",RowBox[{RowBox[{"x","[","0","]"}],"==","0"}],",",RowBox[
+{RowBox[{"x","[","10","]"}],"==","0"}]}],"}"}],",",RowBox[{"{",RowBox[{"x","[","t","]"}],"}"}],",","t"}],"]"}]],
+"Input",CellLabel -> "In[1]:= ",ExpressionUUID -> "84d03c66-3185-40bc-878f-e67d717351bc"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"{",RowBox[{RowBox[{"x","[","t","]"}],"\[Rule]",RowBox[{RowBox[
+{"-","5"}]," ",RowBox[{"(",RowBox[{RowBox[{RowBox[{"-","10"}]," ","t"}],"+",SuperscriptBox[
+"t","2"]}],")"}]}]}],"}"}],"}"}],StandardForm],"Output",CellLabel -> "Out[1]= ",ExpressionUUID -> "f28cdcbd-7340-426c-9a9f-be472bdaf5a8"]},
+Open],ExpressionUUID -> "3deee12a-b26c-4843-838d-0a6c2f73c272"]},Open],ExpressionUUID -> "b1afee59-b11a-42de-89e9-403415124a7f"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Problem"," ","8"}],"Section",ExpressionUUID -> "3e35a59b-bb0c-45a0-a2fd-2c1049636109"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"DSolve","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{RowBox[{RowBox[
+{"y","'"}],"[","t","]"}],"==",RowBox[{RowBox[{"t"," ",RowBox[{"Exp","[",RowBox[{"3","t"}],"]"}]}],"-",RowBox[
+{"2",RowBox[{"y","[","t","]"}]}]}]}],",",RowBox[{RowBox[{"y","[","0","]"}],"==","0"}]}],"}"}],",",RowBox[
+{"{",RowBox[{"y","[","t","]"}],"}"}],",","t"}],"]"}]],"Input",CellLabel -> "In[12]:= ",
+ExpressionUUID -> "38b2b20b-4935-4202-b375-ea86a823629c"],Cell[
+BoxData[RowBox[{"{",RowBox[
+{"{",RowBox[{RowBox[{"y","[","t","]"}],"\[Rule]",RowBox[{FractionBox["1","25"]," ",SuperscriptBox[
+"\[ExponentialE]",RowBox[{RowBox[{"-","2"}]," ","t"}]]," ",RowBox[{"(",RowBox[{"1","-",SuperscriptBox[
+"\[ExponentialE]",RowBox[{"5"," ","t"}]],"+",RowBox[{"5"," ",SuperscriptBox["\[ExponentialE]",
+RowBox[{"5"," ","t"}]]," ","t"}]}],")"}]}]}],"}"}],"}"}],StandardForm],"Output",CellLabel -> "Out[12]= ",
+ExpressionUUID -> "55147580-25ec-4b86-939f-974bbca221f8"]},Open],ExpressionUUID -> "513372aa-7a53-4c28-91a6-698f00b4a11c"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"DSolve","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{RowBox[{RowBox[
+{"y","'"}],"[","t","]"}],"==",RowBox[{"1","-",RowBox[{RowBox[{"(",RowBox[{"t","-",RowBox[
+{"y","[","t","]"}]}],")"}],"^","2"}]}]}],",",RowBox[{RowBox[{"y","[","2","]"}],"==","1"}]}],"}"}],",",RowBox[
+{"{",RowBox[{"y","[","t","]"}],"}"}],",","t"}],"]"}]],"Input",CellLabel -> "In[13]:= ",
+ExpressionUUID -> "bfcc9cd1-212f-442d-a447-44e4fbf033b7"],Cell[
+BoxData[RowBox[{"{",RowBox[
+{"{",RowBox[{RowBox[{"y","[","t","]"}],"\[Rule]",FractionBox[RowBox[{"1","-",RowBox[
+{"3"," ","t"}],"+",SuperscriptBox["t","2"]}],RowBox[{RowBox[{"-","3"}],"+","t"}]]}],"}"}],"}"}],
+StandardForm],"Output",CellLabel -> "Out[13]= ",ExpressionUUID -> "192d8870-dcd2-4901-8914-4b96a3786626"]},
+Open],ExpressionUUID -> "573bde4a-968e-4cc5-a2a3-3c6ac58549ac"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"DSolve","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{RowBox[{RowBox[
+{"y","'"}],"[","t","]"}],"==",RowBox[{"1","+",RowBox[{RowBox[{"y","[","t","]"}],"/","t"}]}]}],",",RowBox[
+{RowBox[{"y","[","1","]"}],"==","2"}]}],"}"}],",",RowBox[{"{",RowBox[{"y","[","t","]"}],"}"}],",","t"}],"]"}]],
+"Input",CellLabel -> "In[17]:= ",ExpressionUUID -> "c38a0870-a87d-47cd-9b7a-273481d7a3e5"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"{",RowBox[{RowBox[{"y","[","t","]"}],"\[Rule]",RowBox[{RowBox[
+{"2"," ","t"}],"+",RowBox[{"t"," ",RowBox[{"Log","[","t","]"}]}]}]}],"}"}],"}"}],
+StandardForm],"Output",CellLabel -> "Out[17]= ",ExpressionUUID -> "641962a8-5bc7-46e7-a213-6b805f21ec5f"]},
+Open],ExpressionUUID -> "8b4b25da-7eae-493e-95f3-8228f4a7b637"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"DSolve","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{RowBox[{RowBox[
+{"y","'"}],"[","t","]"}],"==",RowBox[{RowBox[{"Cos","[",RowBox[{"2","t"}],"]"}],"+",RowBox[
+{"Sin","[",RowBox[{"3","t"}],"]"}]}]}],",",RowBox[{RowBox[{"y","[","0","]"}],"==","1"}]}],"}"}],",",RowBox[
+{"{",RowBox[{"y","[","t","]"}],"}"}],",","t"}],"]"}]],"Input",CellLabel -> "In[16]:= ",
+ExpressionUUID -> "07a9f5a5-4414-447e-ad8e-c28a4e25ed47"],Cell[
+BoxData[RowBox[{"{",RowBox[
+{"{",RowBox[{RowBox[{"y","[","t","]"}],"\[Rule]",RowBox[{FractionBox["1","6"]," ",RowBox[
+{"(",RowBox[{"8","-",RowBox[{"2"," ",RowBox[{"Cos","[",RowBox[{"3"," ","t"}],"]"}]}],"+",RowBox[
+{"3"," ",RowBox[{"Sin","[",RowBox[{"2"," ","t"}],"]"}]}]}],")"}]}]}],"}"}],"}"}],
+StandardForm],"Output",CellLabel -> "Out[16]= ",ExpressionUUID -> "3f2837f3-0de5-4d39-a77b-aec1be65d7ff"]},
+Open],ExpressionUUID -> "0bdc20d4-1e38-4bea-bdaf-c62d9317241d"]},Open],ExpressionUUID -> "57d87b07-9171-4704-909a-828178e4d120"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Problem"," ","9"}],"Section",ExpressionUUID -> "8ef37a12-0783-4ffb-af0f-9f9ece37cfa0"],Cell[
+BoxData[
+RowBox[{"DSolve","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{RowBox[{RowBox[{"y","''"}],"[","x","]"}],"==",RowBox[
+{"-"," ",RowBox[{"Exp","[",RowBox[{RowBox[{"-","2"}],RowBox[{"y","[","x","]"}]}],"]"}]}]}],",",RowBox[
+{RowBox[{"y","[","1","]"}],"==","0"}],",",RowBox[{RowBox[{"y","[","2","]"}],"==",RowBox[
+{"Log","[","2","]"}]}]}],"}"}],",",RowBox[{"{",RowBox[{"y","[","x","]"}],"}"}],",","x"}],"]"}]],
+"Input",CellLabel -> "In[20]:= ",ExpressionUUID -> "e1b18ba1-db34-4bdf-8c30-12c97da8c6ef"],Cell[
+BoxData[
+TemplateBox[{"Solve","ifun","\"Inverse functions are being used by \\!\\(\\*TagBox[\\\"Solve\\\", Short[#1, 5] & ]\\), so some solutions may not be found; use Reduce for complete solution information.\"",2,20,26,33722336887436118115,"Local"},
+"MessageTemplate"],StandardForm],"MSG","Message",ExpressionUUID -> "fab48a20-c14c-44ff-88a7-78fffe375d00"],Cell[
+BoxData[
+TemplateBox[{"DSolve","bvfail","\"For some branches of the general solution, unable to solve the conditions.\"",2,20,27,33722336887436118115,"Local"},
+"MessageTemplate"],StandardForm],"MSG","Message",ExpressionUUID -> "0441aa63-6161-4cb8-bb42-51aa3bcd23a3"],Cell[
+BoxData[
+"$Aborted",StandardForm],"Output",CellLabel -> "Out[20]= ",ExpressionUUID -> "f91cd743-01bc-461c-a78f-289b5386894a"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"DSolve","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{RowBox[{RowBox[
+{"y","''"}],"[","x","]"}],"==",RowBox[{RowBox[{RowBox[{"-"," ",RowBox[{RowBox[{"y","'"}],"[","x","]"}]}],RowBox[
+{"Cos","[","x","]"}]}],"-",RowBox[{RowBox[{"y","[","x","]"}],RowBox[{"Log","[","x","]"}]}]}]}],",",RowBox[
+{RowBox[{"y","[","0","]"}],"==","1"}],",",RowBox[{RowBox[{"y","[",RowBox[{"Pi","/","2"}],"]"}],"==",RowBox[
+{"Exp","[","1","]"}]}]}],"}"}],",",RowBox[{"{",RowBox[{"y","[","x","]"}],"}"}],",","x"}],"]"}]],
+"Input",CellLabel -> "In[18]:= ",ExpressionUUID -> "18361ce5-1b3f-4314-b6fe-49cd28c68d27"],Cell[
+BoxData[
+RowBox[{"DSolve","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{RowBox[{SuperscriptBox["y",
+"\[Prime]\[Prime]",MultilineFunction -> None],"[","x","]"}],"\[Equal]",RowBox[{RowBox[
+{RowBox[{"-",RowBox[{"Log","[","x","]"}]}]," ",RowBox[{"y","[","x","]"}]}],"-",RowBox[
+{RowBox[{"Cos","[","x","]"}]," ",RowBox[{SuperscriptBox["y","\[Prime]",MultilineFunction -> None],"[","x","]"}]}]}]}],",",RowBox[
+{RowBox[{"y","[","0","]"}],"\[Equal]","1"}],",",RowBox[{RowBox[{"y","[",FractionBox[
+"\[Pi]","2"],"]"}],"\[Equal]","\[ExponentialE]"}]}],"}"}],",",RowBox[{"{",RowBox[
+{"y","[","x","]"}],"}"}],",","x"}],"]"}],StandardForm],"Output",CellLabel -> "Out[18]= ",
+ExpressionUUID -> "5e359a9e-0ab7-471f-8eee-6039842c644f"]},Open],ExpressionUUID -> "18afd8b3-71e6-423b-b9be-5819c9d12244"]},
+Open],ExpressionUUID -> "2b684259-3368-4483-821c-44aa482f5182"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Problem"," ","10"}],"Section",ExpressionUUID -> "2b1524b6-a549-42ea-a8e6-0a26f2524eb4"],Cell[
+BoxData[
+RowBox[{"DSolve","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{RowBox[{RowBox[{"y","'"}],"[","t","]"}],"==",RowBox[
+{RowBox[{"(",RowBox[{RowBox[{RowBox[{"(",RowBox[{"y","[","t","]"}],")"}],"^","2"}],"+",RowBox[
+{"y","[","t","]"}]}],")"}],"/","t"}]}],",",RowBox[{RowBox[{"y","[","1","]"}],"==",RowBox[
+{"-","2"}]}]}],"}"}],",",RowBox[{"{",RowBox[{"y","[","t","]"}],"}"}],",","t"}],"]"}]],
+"Input",CellLabel -> "In[1]:= ",ExpressionUUID -> "8e487347-564c-439e-82df-334797b9ab08"],Cell[
+BoxData[
+TemplateBox[{"Solve","ifun","\"Inverse functions are being used by \\!\\(\\*TagBox[\\\"Solve\\\", Short[#1, 5] & ]\\), so some solutions may not be found; use Reduce for complete solution information.\"",2,1,1,25755667607064371550,"Local"},
+"MessageTemplate"],StandardForm],"MSG","Message",ExpressionUUID -> "f5bc06c3-197e-410d-9673-dbd06def8a93"],Cell[
+BoxData[
+RowBox[{"{",RowBox[{"{",RowBox[{RowBox[{"y","[","t","]"}],"\[Rule]",RowBox[{"-",FractionBox[
+RowBox[{"2"," ","t"}],RowBox[{RowBox[{"-","1"}],"+",RowBox[{"2"," ","t"}]}]]}]}],"}"}],"}"}],
+StandardForm],"Output",CellLabel -> "Out[1]= ",ExpressionUUID -> "31f66a34-a18c-4d2c-9509-6d9e5e496ff6"]},
+Open],ExpressionUUID -> "35c70502-4223-4380-8649-f494f605d11a"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Problem"," ","11"}],"Section",ExpressionUUID -> "4295cdc0-c7d7-4f2f-a943-3fd067b1176f"],Cell[
+BoxData[
+RowBox[{RowBox[{"u","[","t_","]"}],":=",RowBox[{"t","/",RowBox[{"(",RowBox[{"1","+","t"}],")"}]}]}]],
+"Input",CellLabel -> "In[4]:= ",ExpressionUUID -> "39c255bb-4549-4d38-8371-2df84edeebfc"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{RowBox[{"u","'"}],"[","t","]"}],"//","Simplify"}]],
+"Input",CellLabel -> "In[6]:= ",ExpressionUUID -> "6d21f3d5-3455-49b2-9de8-0e6f7e4aa2d2"],Cell[
+BoxData[
+FractionBox["1",SuperscriptBox[RowBox[{"(",RowBox[{"1","+","t"}],")"}],"2"]],StandardForm],
+"Output",CellLabel -> "Out[6]= ",ExpressionUUID -> "2f13ddc8-a3a3-4585-ad03-809a2ede61fc"]},
+Open],ExpressionUUID -> "558ebe32-d929-41e3-95a5-7e1232c4b3e7"]},Open],ExpressionUUID -> "e961d85d-3fd9-4d0f-9867-27356949a93c"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "14. for Wolfram Cloud 1.68 (February 7, 2024)"]
