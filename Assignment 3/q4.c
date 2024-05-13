@@ -3,8 +3,8 @@
 #include <complex.h>
 #include <fftw3.h>
 
-#define N 100001
-#define xlim 10
+#define N 10001
+#define xlim 500
 
 double gaussian(double x) {
     return exp(-x*x);
@@ -13,14 +13,13 @@ double gaussian(double x) {
 int main() {
     fftw_complex in[N], out[N];
     fftw_plan p;
-    double Delta = 2 * xlim / (N - 1);
-
-    for (int i=0; i < N; i++) {
-        double x = -xlim + i * Delta;
-        in[i] = gaussian(x) + I * 0.0;
-    }
+    double Delta = (double) 2 * xlim / (N - 1);
 
     p = fftw_plan_dft_1d(N, in, out, FFTW_FORWARD, FFTW_ESTIMATE);
+
+    for (int i=0; i < N; i++) {
+        in[i] = gaussian(-xlim + i * Delta) + I * 0.0;
+    }
 
     fftw_execute(p);
 
