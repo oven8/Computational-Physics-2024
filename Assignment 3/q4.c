@@ -4,9 +4,9 @@
 #include <fftw3.h>
 
 #define N 1001
-#define xlim 50
+#define xlim 5
 
-double sinc(double x) {
+double gaussian(double x) {
     return exp(-pow(x,2));
 }
 
@@ -17,7 +17,7 @@ int main() {
 
     for (int i=0; i < N; i++) {
         double x = -xlim + i * Delta;
-        in[i] = sinc(x) + I * 0.0;
+        in[i] = gaussian(x) + I * 0.0;
     }
 
     p = fftw_plan_dft_1d(N, in, out, FFTW_FORWARD, FFTW_ESTIMATE);
