@@ -17,7 +17,7 @@ double sinc(double x) {
 }
 
 int main() {
-    double Delta = 2 * xlim / (N - 1);
+    double Delta = (double) 2 * xlim / (N - 1);
     double data[2*N];
 
     gsl_fft_complex_wavetable * wavetable;

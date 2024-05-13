@@ -17,11 +17,10 @@ double sinc(double x) {
 int main() {
     fftw_complex in[N], out[N];
     fftw_plan p;
-    double Delta = 2 * xlim / (N - 1);
+    double Delta = (double) 2 * xlim / (N - 1);
 
     for (int i=0; i < N; i++) {
-        double x = -xlim + i * Delta;
-        in[i] = sinc(x) + I * 0.0;
+        in[i] = sinc(-xlim + i * Delta) + I * 0.0;
     }
 
     p = fftw_plan_dft_1d(N, in, out, FFTW_FORWARD, FFTW_ESTIMATE);
