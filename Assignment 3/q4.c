@@ -3,7 +3,7 @@
 #include <complex.h>
 #include <fftw3.h>
 
-#define N 1001
+#define N 100001
 #define xlim 0.5
 
 double gaussian(double x) {
