@@ -4,6 +4,7 @@
 #include <fftw3.h>
 
 #define N 10001
+#define xlim 5000
 
 double sinc(double x) {
     if (x == 0.0){
@@ -16,9 +17,10 @@ double sinc(double x) {
 int main() {
     fftw_complex in[N], out[N];
     fftw_plan p;
-
+    double Delta = 2 * xlim / (N - 1);
+    double x = - xlim;
     for (int i=0; i < N; i++) {
-        double x = (i - N / 2) / (N / 10.0);
+        double x = x + i * Delta;
         in[i] = sinc(x) + I * 0.0;
     }
 
