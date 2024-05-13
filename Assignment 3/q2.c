@@ -18,9 +18,9 @@ int main() {
     fftw_complex in[N], out[N];
     fftw_plan p;
     double Delta = 2 * xlim / (N - 1);
-    double x = - xlim;
+    double x = xlim;
     for (int i=0; i < N; i++) {
-        double x = x + i * Delta;
+        double x = x - i * Delta;
         in[i] = sinc(x) + I * 0.0;
     }
 
