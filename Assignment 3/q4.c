@@ -4,7 +4,7 @@
 #include <fftw3.h>
 
 #define N 100001
-#define xlim 0.1
+#define xlim 10
 
 double gaussian(double x) {
     return exp(-x*x);
